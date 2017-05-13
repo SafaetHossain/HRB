@@ -1,0 +1,5 @@
+D:\Programming\C#\Human Record Book\HRB\HRB.Entity\bin\Debug\HRB.Entity.dll
+D:\Programming\C#\Human Record Book\HRB\HRB.Entity\bin\Debug\HRB.Entity.pdb
+D:\Programming\C#\Human Record Book\HRB\HRB.Entity\obj\Debug\HRB.Entity.csprojResolveAssemblyReference.cache
+D:\Programming\C#\Human Record Book\HRB\HRB.Entity\obj\Debug\HRB.Entity.dll
+D:\Programming\C#\Human Record Book\HRB\HRB.Entity\obj\Debug\HRB.Entity.pdb

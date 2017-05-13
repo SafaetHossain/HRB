@@ -1,0 +1,8 @@
+D:\Programming\C#\Human Record Book\HRB\HRB.Data\bin\Debug\HRB.Data.dll
+D:\Programming\C#\Human Record Book\HRB\HRB.Data\bin\Debug\HRB.Data.pdb
+D:\Programming\C#\Human Record Book\HRB\HRB.Data\bin\Debug\HRB.Entity.dll
+D:\Programming\C#\Human Record Book\HRB\HRB.Data\bin\Debug\HRB.Entity.pdb
+D:\Programming\C#\Human Record Book\HRB\HRB.Data\obj\Debug\HRB.Data.csprojResolveAssemblyReference.cache
+D:\Programming\C#\Human Record Book\HRB\HRB.Data\obj\Debug\HRB.Data.dll
+D:\Programming\C#\Human Record Book\HRB\HRB.Data\obj\Debug\HRB.Data.pdb
+D:\Programming\C#\Human Record Book\HRB\HRB.Data\bin\Debug\HRB.Data.dll.config
