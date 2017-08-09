@@ -10,11 +10,11 @@ namespace HRB.Data
 {
     public class HumanDataAccess
     {
-        //public int Add(Human human)
-        //{
-        //    string query = string.Format("INSERT INTO Human ([Human Name], Salary, JoinDate, BirthDate, Post, Password, phone) VALUES('{0}', '{1}', {2}, '{3}', '{4}', '{5}', '{6}', '{7}')", Human.HumanId, Human.HumanName, Human.Salary, Human.Joindate, Human.Birthdate, Human.Post, Human.Password, Human.Phone);
-        //    return DataAccess.ExecuteQuery(query);
-        //}
+        public int Add(Human human)
+        {
+            string query = string.Format("INSERT INTO Human (Name, Salary, JoinDate, BirthDate, Post, Password, phone) VALUES('{0}', '{1}', {2}, '{3}', '{4}', '{5}', '{6}', '{7}')", Human.HumanId, Human.HumanName, Human.Salary, Human.Joindate, Human.Birthdate, Human.Post, Human.Password, Human.Phone);
+            return DataAccess.ExecuteQuery(query);
+        }
 
         public int Remove(string id)
         {

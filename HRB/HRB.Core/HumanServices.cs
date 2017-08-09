@@ -8,50 +8,50 @@ using HRB.Data;
 
 namespace HRB.Core
 {
-    public class EmployeeServices
+    public class HumanServices
     {
         private static HumanDataAccess humanDataAccess = null;
 
-        public EmployeeServices()
+        public HumanServices()
         {
-            if (EmployeeServices.humanDataAccess == null)
+            if (HumanServices.humanDataAccess == null)
             {
-                EmployeeServices.humanDataAccess = new HumanDataAccess();
+                HumanServices.humanDataAccess = new HumanDataAccess();
             }
         }
-        //public int Add(Human human)
-        //{
-        //    return EmployeeServices.humanDataAccess.Add(human);
-        //}
+        public int Add(Human human)
+        {
+            return HumanServices.humanDataAccess.Add(human);
+        }
 
         public int Remove(string id)
         {
-            return EmployeeServices.humanDataAccess.Remove(id);
+            return HumanServices.humanDataAccess.Remove(id);
         }
 
         //public int Edit(Human human)
         //{
-        //    return EmployeeServices.humanDataAccess.Edit(human);
+        //    return HumanServices.humanDataAccess.Edit(human);
         //}
 
         public int UpdatePassword(string id, string password)
         {
-            return EmployeeServices.humanDataAccess.UpdatePassword(id, password);
+            return HumanServices.humanDataAccess.UpdatePassword(id, password);
         }
         //public List<Human> GetAll()
         //{
-        //    return EmployeeServices.humanDataAccess.GetAll();
+        //    return HumanServices.humanDataAccess.GetAll();
         //}
 
         //public List<Human> EmployeeLogIn(string employeeId)
         //{
 
-        //    return EmployeeServices.humanDataAccess.employeeLogIn(employeeId);
+        //    return HumanServices.humanDataAccess.employeeLogIn(employeeId);
         //}
 
         //public List<Human> GetByName(string name)
         //{
-        //    return EmployeeServices.humanDataAccess.GetAllSortedByName(name);
+        //    return HumanServices.humanDataAccess.GetAllSortedByName(name);
         //}
     }
 }

@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.AddtoolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.EdittoolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.RefreshtoolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.DeletetoolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.ExittoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,14 +52,13 @@
             this.passwordChangeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.AddtoolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.EdittoolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.RefreshtoolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.DeletetoolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.ExittoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -84,10 +88,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -122,6 +122,57 @@
             this.toolStrip1.Size = new System.Drawing.Size(981, 25);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // AddtoolStripButton
+            // 
+            this.AddtoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.AddtoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("AddtoolStripButton.Image")));
+            this.AddtoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.AddtoolStripButton.Name = "AddtoolStripButton";
+            this.AddtoolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.AddtoolStripButton.Text = "toolStripButton1";
+            this.AddtoolStripButton.ToolTipText = "AddtoolStripButton";
+            this.AddtoolStripButton.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // EdittoolStripButton
+            // 
+            this.EdittoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.EdittoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("EdittoolStripButton.Image")));
+            this.EdittoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.EdittoolStripButton.Name = "EdittoolStripButton";
+            this.EdittoolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.EdittoolStripButton.Text = "toolStripButton3";
+            this.EdittoolStripButton.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // RefreshtoolStripButton
+            // 
+            this.RefreshtoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.RefreshtoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("RefreshtoolStripButton.Image")));
+            this.RefreshtoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.RefreshtoolStripButton.Name = "RefreshtoolStripButton";
+            this.RefreshtoolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.RefreshtoolStripButton.Text = "toolStripButton5";
+            this.RefreshtoolStripButton.Click += new System.EventHandler(this.toolStripButton5_Click);
+            // 
+            // DeletetoolStripButton
+            // 
+            this.DeletetoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.DeletetoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DeletetoolStripButton.Image")));
+            this.DeletetoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.DeletetoolStripButton.Name = "DeletetoolStripButton";
+            this.DeletetoolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.DeletetoolStripButton.Text = "toolStripButton4";
+            this.DeletetoolStripButton.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // ExittoolStripButton
+            // 
+            this.ExittoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ExittoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ExittoolStripButton.Image")));
+            this.ExittoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ExittoolStripButton.Name = "ExittoolStripButton";
+            this.ExittoolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.ExittoolStripButton.Text = "toolStripButton6";
+            this.ExittoolStripButton.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // menuStrip1
             // 
@@ -253,57 +304,6 @@
             this.logOutToolStripMenuItem1.Text = "Log out";
             this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
             // 
-            // AddtoolStripButton
-            // 
-            this.AddtoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.AddtoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("AddtoolStripButton.Image")));
-            this.AddtoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.AddtoolStripButton.Name = "AddtoolStripButton";
-            this.AddtoolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.AddtoolStripButton.Text = "toolStripButton1";
-            this.AddtoolStripButton.ToolTipText = "AddtoolStripButton";
-            this.AddtoolStripButton.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // EdittoolStripButton
-            // 
-            this.EdittoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.EdittoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("EdittoolStripButton.Image")));
-            this.EdittoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.EdittoolStripButton.Name = "EdittoolStripButton";
-            this.EdittoolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.EdittoolStripButton.Text = "toolStripButton3";
-            this.EdittoolStripButton.Click += new System.EventHandler(this.toolStripButton3_Click);
-            // 
-            // RefreshtoolStripButton
-            // 
-            this.RefreshtoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.RefreshtoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("RefreshtoolStripButton.Image")));
-            this.RefreshtoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.RefreshtoolStripButton.Name = "RefreshtoolStripButton";
-            this.RefreshtoolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.RefreshtoolStripButton.Text = "toolStripButton5";
-            this.RefreshtoolStripButton.Click += new System.EventHandler(this.toolStripButton5_Click);
-            // 
-            // DeletetoolStripButton
-            // 
-            this.DeletetoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.DeletetoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DeletetoolStripButton.Image")));
-            this.DeletetoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.DeletetoolStripButton.Name = "DeletetoolStripButton";
-            this.DeletetoolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.DeletetoolStripButton.Text = "toolStripButton4";
-            this.DeletetoolStripButton.Click += new System.EventHandler(this.toolStripButton4_Click);
-            // 
-            // ExittoolStripButton
-            // 
-            this.ExittoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ExittoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ExittoolStripButton.Image")));
-            this.ExittoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ExittoolStripButton.Name = "ExittoolStripButton";
-            this.ExittoolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.ExittoolStripButton.Text = "toolStripButton6";
-            this.ExittoolStripButton.Click += new System.EventHandler(this.toolStripButton6_Click);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dataGridView1);
@@ -329,6 +329,21 @@
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dataGridView1.Size = new System.Drawing.Size(518, 409);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            // 
+            // phone
+            // 
+            this.phone.HeaderText = "Phone";
+            this.phone.Name = "phone";
+            // 
+            // address
+            // 
+            this.address.HeaderText = "Address";
+            this.address.Name = "address";
             // 
             // panel3
             // 
@@ -366,6 +381,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(445, 516);
             this.panel3.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(317, 452);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 87;
+            this.button1.Text = "Update";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox14
             // 
@@ -599,30 +624,6 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 59;
             this.label1.Text = "Name";
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            // 
-            // phone
-            // 
-            this.phone.HeaderText = "Phone";
-            this.phone.Name = "phone";
-            // 
-            // address
-            // 
-            this.address.HeaderText = "Address";
-            this.address.Name = "address";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(317, 452);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 87;
-            this.button1.Text = "Print";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
